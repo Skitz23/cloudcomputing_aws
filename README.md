@@ -70,6 +70,33 @@ once done type the ip address into google and you should have this page
 # Diagram
 ![](/diagram.png)
 
+# How to push app data file to AWS
+
+
+### Step 1
+Go onto gitbash and cd into the .shh folder the command to do this is
+```
+cd .shh
+```
+### Step 2
+Use the following code to run the app
+
+```
+scp -i devops-tech201.pem -r <your app path> ubuntu@<your IP in the example block you paste to ssh into ec2>:/home/ubuntu
+```
+This code needs to be editited with the location of where your app file is and your correct ip address this is so you are able to run the app with your ip address
+
+In my case the code will be
+```
+$ scp -i devops-tech201.pem -r /c/Users/ZainB/tech201_virtualisation/tech201_virtualisation/app ubuntu@ec2-52-215-79-130.eu-west-1.compute.amazonaws.com:/home/ubuntu
+```
+### Step 3
+The process should take around 5 minuites onces it's done go on a browser type your ip address and at the end put :3000 for example
+```
+52.215.79.130:3000/
+```
+If the following steps are done correctly then your page should look like this
+![](/Screenshot_20230215_172115.png)
 
 
 
