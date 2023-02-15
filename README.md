@@ -67,6 +67,8 @@ once done type the ip address into google and you should have this page
 
 ![](/nginx.png)
 
+# Diagram
+![](/diagram.png)
 
 
 
