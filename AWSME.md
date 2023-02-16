@@ -22,3 +22,66 @@ Each SSH key pair includes two keys which are
 - Go back to the app and create an environment variable with the database endpoint
 - Relaunch the app
 
+
+
+# Tier 2 architecture - Deploying our database VM on EC2
+
+### Step 1
+We need to SSH into our we do this by using the code from instance on AWS
+
+```
+ssh -i "devops-tech201.pem" ubuntu@ec2-3-252-164-141.eu-west-1.compute.amazonaws.com
+```
+
+### Step 2
+We have to migrate the database provision.sh script we do this by typing
+```
+git clone + URL from the repository
+```
+The url from repositry is found on github
+
+### Step 3
+Navigate to the correct folder once thats done
+```
+sudo ./provision.sh
+```
+This code will allow us to run the file
+
+### Step 4
+Use the following code to change the permissions of the file
+```
+chmod 700 provision.sh
+```
+Once thats done type
+```
+ sudo systemctl restart mongod 
+ sudo systemctl enable mongod
+ sudo systemctl status mongod
+ ```
+
+ # Step 5
+ Chnage the BindIP to 0.0.0.0 to be public
+ To check the changes saved type
+  ```
+  cat mongod.conf
+  ```
+
+  # Step 6
+  Naviagte to the app folder and type
+  ```
+  export DB_HOST=mongodb://db_instance_IP/posts
+  ```
+  Now type the following commands
+  ```
+  npm install
+  npm start
+  node seeds/seed.sj
+  ```
+
+  if the following steps are done correctly then go on AWS and get the ipaddress and type it on google for example
+  ```
+  http://54.229.41.99:3000/posts
+  ```
+  And the page should load
+
+  ![](/postpage.png)
