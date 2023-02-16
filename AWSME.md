@@ -8,3 +8,8 @@ By using a two-tiered architecture, end users do not have to remember the physic
 
 # Virtual Private Cloud (VPC)
 A virtual private cloud (VPC) is a secure, isolated private cloud hosted within a public cloud. VPC customers can run code, store data, host websites, and do anything else they could do in an ordinary private cloud, but the private cloud is hosted remotely by a public cloud provider.
+
+# SSH Key pairs
+Each SSH key pair includes two keys which are
+- A public key that is copied to the SSH server and anyone with a copy of the public key can encrypt data and read the persons corresponding private key.
+- A private key that remains with the user.
