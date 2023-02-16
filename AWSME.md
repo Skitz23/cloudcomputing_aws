@@ -81,8 +81,8 @@ Once thats done type
   npm start
   node seeds/seed.sj
   ```
-
-  if the following steps are done correctly then go on AWS and get the ipaddress and type it on google for example
+  This code will allow you to get the data on the post page
+  If the following steps are done correctly then go on AWS and get the ipaddress and type it on google for example
   ```
   http://54.229.41.99:3000/posts
   ```
