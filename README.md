@@ -10,7 +10,7 @@ Once you recieve your login for AWS go to the website login and make sure you ch
 
 Go to the top right and change the region to Europe(Ireland)
 
-![](/AWS.png)
+![](/pictures/AWS.png)
 
 
 # What is AWS?
@@ -49,10 +49,10 @@ Cloud computing has many benefits some of them are:
 # How to run AWS
 
 Go on AWS and naviage to EC2 Dashboards once your their click instances(running) the page should look like the image below
-![](/AWS%20Naviagte.png)
+![](/pictures/AWS%20Naviagte.png)
 
 Once you click the instance running page click your instance and connect
-![](/Screenshot_20230215_134222.png)
+![](/pictures/Screenshot_20230215_134222.png)
 
 Run gitbash terminal and type 
 
@@ -65,10 +65,10 @@ ssh -i "devops-tech201.pem" ubuntu@ec2-52-215-79-130.eu-west-1.compute.amazonaws
 ```
 once done type the ip address into google and you should have this page
 
-![](/nginx.png)
+![](/pictures/nginx.png)
 
 # Diagram
-![](/diagram.png)
+![](/pictures/diagram.png)
 
 # How to push app data file to AWS
 
@@ -96,7 +96,7 @@ The process should take around 5 minuites onces it's done go on a browser type y
 52.215.79.130:3000/
 ```
 If the following steps are done correctly then your page should look like this
-![](/Screenshot_20230215_172115.png)
+![](/pictures/Screenshot_20230215_172115.png)
 
 
 

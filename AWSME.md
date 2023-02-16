@@ -4,7 +4,7 @@ The Two tier architecture consists of two layers which are the Client Tier and D
 # Why do we need to make a 2-tier architecture?
 By using a two-tiered architecture, end users do not have to remember the physical name of hosts that their messaging and calendar applications connect to. The Access-Layer Application hosts provide proxies to connect end users to their assigned messaging or calendar data center host.
 
-![](/AWStech2diagram.png)
+![](/pictures/AWStech2diagram.png)
 
 # Virtual Private Cloud (VPC)
 A virtual private cloud (VPC) is a secure, isolated private cloud hosted within a public cloud. VPC customers can run code, store data, host websites, and do anything else they could do in an ordinary private cloud, but the private cloud is hosted remotely by a public cloud provider.
@@ -60,11 +60,15 @@ Once thats done type
  ```
 
  # Step 5
- Chnage the BindIP to 0.0.0.0 to be public
+ Chanage the BindIP to 0.0.0.0 to be public
  To check the changes saved type
+
   ```
   cat mongod.conf
   ```
+  
+![](/pictures/Bindip.png)
+
 
   # Step 6
   Naviagte to the app folder and type
@@ -84,4 +88,9 @@ Once thats done type
   ```
   And the page should load
 
-  ![](/postpage.png)
+  ![](/pictures/postpage.png)
+
+# Potential Blockers
+- when running mongodb make sure to comment out the two lines that delete the file and add in the new file
+- Always make sure that you run the app after any changes that you make.
+- If npm install isnt working then try just running node app.js 
