@@ -1,3 +1,6 @@
+# What is an AMI?
+An AMI stands for Amazon Machine Image and is a pre-configured virtual machine image used to create and launch instances of EC2 instances in the cloud. An AMI includes the operating system, application server, and any additional software needed to run an application on an EC2 instance.
+
 # How to create an AMI image
 
 # Step 1
@@ -10,3 +13,4 @@ Fill in the AMI name and description scroll down and select 8GB as the strorage 
 
 # Diagram
 ![](/pictures/AMIdiagram.png)
+
