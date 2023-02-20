@@ -15,3 +15,11 @@ Their are many reasons why we should use s3:
 # Disaster recovery
 Amazon S3 is a popular service for disaster recovery as it provides high durability, availability, and security for storing and retrieving data, making it a reliable platform for disaster recovery. Furthermore, S3 provides built-in replication capabilities, allowing you to replicate data across regions or within a region. This ensures that your data is available even in the event of a regional outage.
 
+
+# CRUD (Create, Read, Update, and Delete)
+These operations represent the basic functionalities that allow users to interact with databse or application.
+- Create: This operation allows users to add new data to the system or database.
+- Read: This operation allows users to retrieve data from the system or database.
+- Update: This operation allows users to modify or update existing data in the system or database.
+- Delete: This operation allows users to remove data from the system or database.
+
