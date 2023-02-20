@@ -94,7 +94,16 @@ Now type this code below
 aws s3 cp test.txt s3://zain-tech201
 ```
 
+### Step 8
 
+Go to aws s3 buckets and enable the following settings on your textfile created
+![](/pictures/s3.png)
+
+Now copy the object url into google and the following page should appear
+![](/pictures/s3webpage.png)
+
+# S3 Diagram
+![](/pictures/s3diagram.png)
 
 
 
