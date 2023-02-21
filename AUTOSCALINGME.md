@@ -24,7 +24,11 @@ An autoscaling group performs the following tasks:
 # How to Create a launch template
 
 ### Step 1 
-Go on lauch template and create a template for the user data include the following code
+- Go on lauch template and create a template 
+- Tick the box for auto scaling guidance
+- select unbuntu 18.04 
+- select t2 micro as an instance
+- Scroll to the bottom of advance data and type the following code it
 ```
 #!/bin/bash
 sudo apt update -y 
@@ -34,6 +38,7 @@ sudo apt install nginx -y
 sudo systemctl restart nginx
 sudo systemctl enable nginx
 ```
+Once thats done create the instance
 
 # How to create a autoscaling group?
 
