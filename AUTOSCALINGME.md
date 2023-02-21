@@ -16,9 +16,6 @@ An autoscaling group performs the following tasks:
 - It scales EC2 instances up or down, which helps in managing the availability of applications.
 - It runs the required number of instances. For example, if the required number of instances is 5, then it will run 5 EC2 instances.
 
-![](/pictures/Autoscaling.png)
-
-
 # Benefits of autoscaling
 - Anticipate costs and avoid overspending: AWS Auto Scaling can help you optimize your utilization and cost efficiencies when consuming AWS services so you only pay for the resources you actually need. When demand drops, AWS Auto Scaling will automatically remove any excess resource capacity so you avoid overspending.
 - Make smart scaling decisions: AWS Auto Scaling lets you automate how groups of different resources respond to changes in demand. Easy-to-understand scaling strategies let you choose to optimize availability, costs, or a balance of both.
@@ -51,6 +48,7 @@ Select your launch configuration, which you previously created.
 
 ### Step 4
 Configure the autoscaling group settings, including the desired capacity, minimum and maximum capacity, subnets, load balancers, and health check settings.
+For the desired capacity and minimum capacity i chose 2 but for the maximum capacity i chose 3
 
 ### Step 5
 Set up your scaling policies, including the conditions that will trigger the scaling events and the amount by which to scale up or down.
@@ -58,3 +56,5 @@ Set up your scaling policies, including the conditions that will trigger the sca
 ### Step 6
 Review your settings and launch the autoscaling group.
 After you have created your autoscaling group, you can use the AWS console to monitor its performance and adjust its settings as needed.
+
+![](/pictures/Autoscaling.png)
