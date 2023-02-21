@@ -51,7 +51,12 @@ Configure the autoscaling group settings, including the desired capacity, minimu
 For the desired capacity and minimum capacity i chose 2 but for the maximum capacity i chose 3
 
 ### Step 5
-Set up your scaling policies, including the conditions that will trigger the scaling events and the amount by which to scale up or down.
+For the next Step i chose 
+
+Scaling policy name: Target Tracking Policy
+Metric type: Average CPU util
+Target value: 50%
+Instance need: 300 seconds before warm up
 
 ### Step 6
 Review your settings and launch the autoscaling group.
