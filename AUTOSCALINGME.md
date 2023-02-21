@@ -23,3 +23,38 @@ An autoscaling group performs the following tasks:
 - Anticipate costs and avoid overspending: AWS Auto Scaling can help you optimize your utilization and cost efficiencies when consuming AWS services so you only pay for the resources you actually need. When demand drops, AWS Auto Scaling will automatically remove any excess resource capacity so you avoid overspending.
 - Make smart scaling decisions: AWS Auto Scaling lets you automate how groups of different resources respond to changes in demand. Easy-to-understand scaling strategies let you choose to optimize availability, costs, or a balance of both.
 - Predictable scaling : AWS Auto Scaling calculates the minimum and maximum limits between which your resources will scale. 
+
+# How to Create a launch template
+
+### Step 1 
+Go on lauch template and create a template for the user data include the following code
+```
+#!/bin/bash
+sudo apt update -y 
+sudo apt upgrade -y
+
+sudo apt install nginx -y 
+sudo systemctl restart nginx
+sudo systemctl enable nginx
+```
+
+# How to create a autoscaling group?
+
+### Step 1
+In the AWS Management Console, navigate to the EC2 service and click on "Auto Scaling Groups" in the left-hand menu.
+
+### Step 2
+Click on the "Create Auto Scaling group" button.
+
+### Step3
+Select your launch configuration, which you previously created.
+
+### Step 4
+Configure the autoscaling group settings, including the desired capacity, minimum and maximum capacity, subnets, load balancers, and health check settings.
+
+### Step 5
+Set up your scaling policies, including the conditions that will trigger the scaling events and the amount by which to scale up or down.
+
+### Step 6
+Review your settings and launch the autoscaling group.
+After you have created your autoscaling group, you can use the AWS console to monitor its performance and adjust its settings as needed.
