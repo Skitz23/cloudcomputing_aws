@@ -41,3 +41,24 @@ An Internet gateway is a network component that provides connectivity between a 
 
 # Route table
 A route table is a database that contains information about the networks and addresses that a router can reach, and how it can reach them. The route table is used by the router to determine the best path for forwarding packets between different networks.
+
+
+# How to create a VPC
+- Log in to your AWS account.
+- Go to the AWS Management Console and select the region where you want to create the VPC.
+- From the Services menu, select VPC.
+- Click on "Your VPCs" and then click on "Create VPC".
+
+Input the following
+
+![](/pictures/CreateVPC.png)
+
+# How to Create a Subnet
+- Log in to your AWS account.
+- Go to the AWS Management Console and select the region where your VPC is located.
+- From the Services menu, select VPC.
+- Click on "Subnets" and then click on "Create subnet".
+
+Input the following
+
+![](/pictures/VPCSubnet.png)
