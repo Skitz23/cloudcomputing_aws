@@ -3,6 +3,8 @@
 # what is vpc?
 VPC stands for Virtual Private Cloud. It is a service offered by cloud computing providers, such as Amazon Web Services (AWS), Google Cloud Platform, and Microsoft Azure, that allows users to create a private network in the cloud.A VPC allows you to create and control a logically isolated section of the public cloud, which can be customized with your own private IP address range, subnets, route tables, and network gateways.
 
+![](/pictures/VPC.png)
+
 # How does vpc help the business?
 VPCs can be very beneficial to businesses in several ways:
 - Increased Security: By using a VPC, businesses can create a private, isolated network that is only accessible to authorized users and resources. This can help to prevent unauthorized access and can reduce the risk of security breaches.
@@ -28,3 +30,10 @@ A public subnet is a subnet within a network that is publicly accessible from th
 A private subnet is a subnet within a network that is not publicly accessible from the Internet. Devices within a private subnet typically have private IP addresses, which are not routable on the Internet. To access devices within a private subnet, users must first connect to a device that is accessible from the Internet, such as a firewall or VPN gateway, and then connect to the private subnet over a secure connection. 
 
 # CIDR
+CIDR (Classless Inter-Domain Routing) is a method of allocating IP addresses and routing Internet Protocol (IP) packets. In CIDR, IP addresses are divided into variable-length "prefixes", which are denoted by a slash ("/") followed by a number indicating the length of the prefix.
+
+CIDR blocks are ranges of IP addresses that are defined using CIDR notation. For example, the CIDR block 192.168.0.0/16 represents all IP addresses from 192.168.0.0 to 192.168.255.255, while the CIDR block 10.0.0.0/8 represents all IP addresses from 10.0.0.0 to 10.255.255.255.
+
+CIDR blocks are used for subnetting, where a larger IP address range is divided into smaller subnets. Each subnet is assigned its own CIDR block, which determines the range of IP addresses that can be used by devices within that subnet.
+
+# Internet gateway
