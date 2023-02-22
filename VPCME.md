@@ -12,3 +12,19 @@ VPCs can be very beneficial to businesses in several ways:
 - Hybrid Cloud: VPCs can enable businesses to connect their on-premises infrastructure with cloud resources.
 
 # How does vpc help devops
+VPCs can be very helpful for DevOps teams in many ways:
+- Isolation: DevOps teams can use VPCs to create isolated development, testing, and production environments. This can help to prevent changes made in one environment from impacting others, and can also provide a secure environment for testing and development.
+- Automation: VPCs can be easily configured and managed using infrastructure as code tools like Terraform, CloudFormation, and Ansible. This allows DevOps teams to easily provision and manage VPC resources 
+- Security: VPCs allow DevOps teams to define their own network security groups, access control lists (ACLs), and firewall rules. This can then reduce the risk of security breach
+
+# Why did AWS need to introduce a VPC virtual private cloud
+AWS introduced the VPC (Virtual Private Cloud) service to provide customers with a way to create a private network environment in the AWS cloud.AWS customers had to use public IP addresses to connect their cloud resources to the internet, which made their infrastructure vulnerable to attacks from the public internet
+
+# what is subnets
+A subnet, short for subnetwork, is a smaller network within a larger network. It is created by dividing a larger network into smaller, more manageable sections to improve performance, security, and organization.In a subnet, all devices have IP addresses that are within a certain range, and communication is generally restricted to devices within that range.
+
+A public subnet is a subnet within a network that is publicly accessible from the Internet. Devices within a public subnet have public IP addresses that can be reached from anywhere on the Internet. This makes public subnets ideal for hosting web servers, email servers, and other services that need to be publicly accessible.
+
+A private subnet is a subnet within a network that is not publicly accessible from the Internet. Devices within a private subnet typically have private IP addresses, which are not routable on the Internet. To access devices within a private subnet, users must first connect to a device that is accessible from the Internet, such as a firewall or VPN gateway, and then connect to the private subnet over a secure connection. 
+
+# CIDR
