@@ -37,3 +37,7 @@ CIDR blocks are ranges of IP addresses that are defined using CIDR notation. For
 CIDR blocks are used for subnetting, where a larger IP address range is divided into smaller subnets. Each subnet is assigned its own CIDR block, which determines the range of IP addresses that can be used by devices within that subnet.
 
 # Internet gateway
+An Internet gateway is a network component that provides connectivity between a local network and the Internet. It allows devices within the local network to access resources on the Internet, and enables communication between devices on the local network and devices on other networks.Internet gateway is a router that connects the local network to the Internet via an Internet service provider (ISP). The router is configured with a public IP address on its WAN (wide area network) interface, which allows it to communicate with devices on the Internet.
+
+# Route table
+A route table is a database that contains information about the networks and addresses that a router can reach, and how it can reach them. The route table is used by the router to determine the best path for forwarding packets between different networks.
