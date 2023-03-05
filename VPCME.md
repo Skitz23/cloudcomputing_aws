@@ -63,4 +63,3 @@ Input the following
 
 ![](/pictures/VPCSubnet.png)
 
-# Hello my name is zain
